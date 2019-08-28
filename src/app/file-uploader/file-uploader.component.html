@@ -1,0 +1,17 @@
+<div class="center">
+        <buttoncd mat-raised-button (click)="openFile()" title="click to choose file" >
+                <mat-icon class="mat-icon-rtl-mirror" svgIcon="thumbs-up"></mat-icon>
+        </button>
+
+<input style="display: none;" type="file" id="file" #file name="attachment" (change)="uploadAttachment(file, $event)"/>
+
+
+
+<mat-card *ngIf="imgPreview" class="example-card">
+        <img  [src]="src" height="200">
+</mat-card>
+
+<button *ngIf="imgPreview" class="center" mat-raised-button color="primary" (click)="uploadImg()" >Post</button>
+
+
+</div>

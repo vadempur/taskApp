@@ -1,0 +1,7 @@
+<span class="ml">Like</span>
+<button mat-icon-button  aria-label="Example icon-button with a heart icon" (click)="toggleLike()" >
+        <mat-icon  [ngClass]="{'active':liked,'like':!liked}" >favorite</mat-icon>        
+</button>
+    <span >{{liked?1:0}}</span>
+
+

@@ -1,0 +1,6 @@
+<span class="ml">Share</span>
+
+<button mat-icon-button  aria-label="Example icon-button with a heart icon" (click)="toggleShare()" >
+        <mat-icon  [ngClass]="{'active':share,'share':!share}" >share</mat-icon>        
+</button>
+<span>{{share?1:0}}</span>

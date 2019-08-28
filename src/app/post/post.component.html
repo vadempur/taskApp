@@ -1,0 +1,13 @@
+<mat-card class="container" >
+  <img src="../../assets/angular.png"  alt="">
+  <div>
+      <app-like class="mr"></app-like>
+      <app-comment class="mr" (commented)="isCommented=$event"></app-comment>
+      <app-share class="mr" ></app-share>
+  </div>
+  <div *ngIf="isCommented">
+        <mat-form-field  class="example">
+                <input placeholder="write comment" matInput >
+        </mat-form-field>
+  </div>
+</mat-card>
